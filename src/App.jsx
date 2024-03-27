@@ -10,7 +10,7 @@ function App() {
     <ThemeProvider theme={fondTheme} >
       <NavBar/>
 
-      <h1>Hola</h1>
+
 
     </ThemeProvider>
   )

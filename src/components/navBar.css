@@ -13,11 +13,15 @@
 }
 
 .underline-color{
-  color: red;
-  border-bottom: 5px solid blue;
+  color: aqua;
+  border-bottom: 5px solid red;
 }
 
 .box-img-title{
   display: flex;
   flex-direction: row;
+}
+
+.description{
+  padding-top: 50px;
 }

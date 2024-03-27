@@ -1,11 +1,6 @@
-* {
-  width: auto;
-  margin: 0;
-}
+
 
 #root {
-  
-  width: ;
   height: 100vh;
   background-color: rgba(255, 245, 214, 0.8);
 }
