@@ -9,9 +9,9 @@ $ npm init
 - Install some dependencies
 
   ***NOTE:*** 
-- You can run all the dependencies in one line
-  - Example: npm install bcrypt cooki-parser cors ..., etc.
+- Install material UI
+ 
 
 ```shell
-$ npm install bcrypt
+$ npm install @mui/material @emotion/react @emotion/styled
 ```
