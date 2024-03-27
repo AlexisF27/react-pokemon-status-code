@@ -1,16 +1,29 @@
 ### Run this project
 
 - Clone this project
-- Then run:
-  
-```shell
-$ npm init
-```
-- Install some dependencies
 
-  ***NOTE:*** 
-- Install material UI
- 
+- Install some dependencies
+```shell
+$ npm install
+```
+
+- Then run:
+```shell
+$ npm run dev
+```
+
+> [!IMPORTANT]  
+> Some third-party dependencies are installed
+
+| Dependencies |   |
+|--------------|---|
+| Material UI  | X |
+| Vite         | X |
+| eslint       | X |
+| Prettier     |   |
+
+ > [!IMPORTANT]  
+> If needed, installed manually with the following commands
 
 ```shell
 $ npm install @mui/material @emotion/react @emotion/styled
