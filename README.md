@@ -20,4 +20,6 @@ $ npm install @mui/material @emotion/react @emotion/styled
 -Resources
 
 -Pokemon Logo
-[https://achodibujos.com/images/pokemon/logo-pokeball-coloring-page.jpg](https://achodibujos.com/images/pokemon/logo-pokeball-coloring-page.jpg)
+
+![logo-pokeball-coloring-page](https://github.com/AlexisF27/react-pokemon-status-code/assets/31175897/3d907c95-f92f-4b30-aee5-fa89be818cdf)
+
