@@ -1,6 +1,6 @@
 #header{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -15,4 +15,9 @@
 .underline-color{
   color: red;
   border-bottom: 5px solid blue;
+}
+
+.box-img-title{
+  display: flex;
+  flex-direction: row;
 }
