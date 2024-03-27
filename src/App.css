@@ -1,42 +1,43 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+/* Font Family */
+.roboto-font {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Font Weight */
+.normal-weight {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+/* Font Size */
+.custom-font-size {
+  font-size: 24px;
+}
+
+/* Letter Spacing */
+.spaced-out {
+  letter-spacing: 2px;
+}
+
+/* Text Color */
+.blue-text {
+  color: blue;
+}
+
+/* Text Decoration */
+.underlined-text {
+  text-decoration: underline;
+}
+
+/* Text Alignment */
+.centered-text {
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
