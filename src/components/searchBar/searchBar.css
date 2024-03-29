@@ -1,0 +1,15 @@
+.copy-code{
+  width: 80%;
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+
+  button {
+    height: 60px;
+    border-radius: 30px ;
+    margin-left: 10px;
+  }
+}
