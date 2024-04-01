@@ -1,15 +1,32 @@
 .copy-code{
   width: 80%;
 }
-.searchBar{
+
+.search-bar-box{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.search-bar{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  flex-grow: 0;
 
   button {
     height: 60px;
     border-radius: 30px ;
     margin-left: 10px;
   }
+}
+
+.search-bar-description{
+  padding-top: 20px;
+  padding-left: 110px;
+  width: 80%;
+}
+
+.img-search{
+  padding-right: 10px;
 }
