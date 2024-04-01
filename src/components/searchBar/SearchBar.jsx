@@ -1,6 +1,6 @@
 import './searchBar.css';
 
-import { Box, Button, TextField, Typography } from '@mui/material';
+import { Box, Button, TextField } from '@mui/material';
 
 import SearchIcon from '@mui/icons-material/Search';
 

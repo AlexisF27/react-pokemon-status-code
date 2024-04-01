@@ -1,5 +1,6 @@
 import './App.css'
 
+import LinkCode from './components/linkCode/LinkCode'
 import NavBar from './components/navBar/NavBar'
 import SearchBar from './components/searchBar/SearchBar'
 import { ThemeProvider } from '@mui/material/styles';
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Title />
       <SearchBar />
+      <LinkCode/>
     </ThemeProvider>
   )
 }
