@@ -1,27 +1,28 @@
-import { Box, Button, TextField } from '@mui/material';
+import './linkCode.css';
 
-import SearchIcon from '@mui/icons-material/Search';
+import { Box, Button, IconButton, TextField } from '@mui/material';
+
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
 function LinkCode() {
   return (
-    <Box className="search-bar">
-    <TextField
-      InputProps={{
-        readOnly: false,
-      }}
-      label="Dogs for every HyperText Transfer Protocol response status code."
-      className="copy-code"
-      defaultValue="https://http.dog/[code].jpg"
-      type='search'
-    />
+    <Box className="link-code-bar">
+      <TextField
+        InputProps={{
+          readOnly: false,
+        }}
+        label="Dogs for every HyperText Transfer Protocol response status code."
+        className="copy-code"
+        defaultValue="https://http.dog/[code].jpg"
+        type='search'
+      >
 
-    <Button
-      variant="contained"
-    >
-      <SearchIcon className='img-search' />
-      Search Code
-    </Button>
-  </Box>
+      </TextField>
+        <IconButton>
+          <ContentCopyIcon />
+        </IconButton>
+
+    </Box>
   )
 }
 

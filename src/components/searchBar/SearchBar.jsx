@@ -8,7 +8,6 @@ const SearchBar = () => {
   return (
     <Box className="search-bar-box">
 
-
       <Box className="search-bar">
         <TextField
           InputProps={{
