@@ -1,6 +1,6 @@
 import './linkCode.css';
 
-import { Box, Button, IconButton, TextField } from '@mui/material';
+import { Box, IconButton, TextField } from '@mui/material';
 
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 
