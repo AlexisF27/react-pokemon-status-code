@@ -1,28 +1,27 @@
-import './searchBar.css';
-
 import { Box, Button, TextField } from '@mui/material';
 
 import SearchIcon from '@mui/icons-material/Search';
 
 const SearchBar = () => {
   return (
-    <Box className="search-bar-box">
+    <Box className="flex flex-col">
 
-      <Box className="search-bar">
+      <Box className="flex justify-center items-center grow-0 pt-10">
         <TextField
           InputProps={{
             readOnly: false,
           }}
-          label="Dogs for every HyperText Transfer Protocol response status code."
-          className="copy-code"
+          className="w-3/4 ml-2.5"
           defaultValue="https://http.dog/[code].jpg"
           type='search'
         />
 
+
         <Button
+          className='m-10 border-x'
           variant="contained"
         >
-          <SearchIcon className='img-search' />
+          <SearchIcon />
           Search Code
         </Button>
       </Box>
