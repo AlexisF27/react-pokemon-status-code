@@ -1,12 +1,3 @@
-#header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-grow: 2;
-
-}
 
 #img-logo{
   height: 100px;
@@ -19,10 +10,6 @@
   border-bottom: 5px solid red;
 }
 
-.box-img-title{
-  display: flex;
-  flex-direction: row;
-}
 
 .description{
   padding-top: 50px;
