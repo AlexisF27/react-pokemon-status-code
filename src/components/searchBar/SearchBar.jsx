@@ -15,15 +15,16 @@ const SearchBar = () => {
           defaultValue="https://http.dog/[code].jpg"
           type='search'
         />
+        <Box className="pl-4">
+          <Button
+            className='m-10 border-x'
+            variant="contained"
+          >
+            <SearchIcon />
+            Search Code
+          </Button>
+        </Box>
 
-
-        <Button
-          className='m-10 border-x'
-          variant="contained"
-        >
-          <SearchIcon />
-          Search Code
-        </Button>
       </Box>
     </Box>
   );
