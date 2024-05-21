@@ -4,8 +4,7 @@ import { createTheme } from '@mui/material/styles';
 const fondTheme = createTheme({
   typography: {
     fontFamily: [
-      'Courier New',
-      'Arial',
+      '"Georgia"',
       'sans-serif',
     ].join(','),
   },
