@@ -39,7 +39,7 @@ function LinkCode() {
       </Box>
       <Box className="relative w-full flex justify-center">
         <Slide direction="down" in={alertOpen} mountOnEnter unmountOnExit timeout={500}>
-          <Alert severity="success" className="absolute top-0transform -translate-x-1/2">
+          <Alert severity="success" className="absolute top-0 transform -translate-x-1/2">
             Text copied to clipboard!
           </Alert>
         </Slide>
