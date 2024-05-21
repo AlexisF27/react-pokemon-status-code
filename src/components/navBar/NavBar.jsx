@@ -1,4 +1,3 @@
-import './navBar.css';
 import '@fontsource/roboto';
 
 import { Box, Typography } from '@mui/material';
