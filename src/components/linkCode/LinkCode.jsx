@@ -17,7 +17,7 @@ function LinkCode() {
   };
 
   return (
-    <Box className="flex flex-col items-center">
+    <Box className="flex flex-col items-center pb-10">
 
 
       <Box className="flex justify-center pt-10 w-3/4">
@@ -37,13 +37,14 @@ function LinkCode() {
           </IconButton>
         </Box>
       </Box>
-
-      {alertOpen && (
-        <Slide  in={alertOpen}  mountOnEnter unmountOnExit timeout={1000}>
-          <Alert className='flex justify-center w-1/4' severity="success">This is a success Alert.</Alert>
-
+      <Box className="relative w-full flex justify-center">
+        <Slide direction="down" in={alertOpen} mountOnEnter unmountOnExit timeout={500}>
+          <Alert severity="success" className="absolute top-0transform -translate-x-1/2">
+            Text copied to clipboard!
+          </Alert>
         </Slide>
-      )}
+      </Box>
+
     </Box>
   )
 }
