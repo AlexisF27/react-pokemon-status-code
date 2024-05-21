@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +8,8 @@ body {
   margin: 0px;
 }
 
-#root {
+:root {
+  font-family: 'Courier New', Courier, monospace;
   height: 100vh;
   background-color: rgba(255, 245, 214, 0.8);
 }

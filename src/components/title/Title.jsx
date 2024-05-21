@@ -3,8 +3,7 @@ import { Box, Typography } from '@mui/material';
 function Title() {
   return (
     <Box className="flex justify-center align-center">
-      
-      <Typography variant="h5" style={{ fontFamily: 'Roboto' }} className="roboto-font normal-weight description">Pokemons for every HyperText Transfer Protocol response status code.</Typography>
+      <Typography variant="h5" className=" description">Pokemons for every HyperText Transfer Protocol response status code.</Typography>
     </Box>
   )
 }

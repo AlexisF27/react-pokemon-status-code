@@ -4,7 +4,7 @@ import { createTheme } from '@mui/material/styles';
 const fondTheme = createTheme({
   typography: {
     fontFamily: [
-      'Roboto',
+      'Courier New',
       'Arial',
       'sans-serif',
     ].join(','),
