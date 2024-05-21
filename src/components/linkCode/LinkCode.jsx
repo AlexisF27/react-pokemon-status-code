@@ -19,8 +19,11 @@ function LinkCode() {
   return (
     <Box className="flex flex-col items-center pb-10">
 
+        <Typography className='pt-10 first:mr-96'> 
+        How to use, replace [code] with a three digit HTTP response status code number:
+        </Typography>
 
-      <Box className="flex justify-center pt-10 w-3/4">
+      <Box className="flex justify-center w-3/4">
 
         <Box
           className="flex justify-between items-center p-2 w-3/4 border-solid border-2 border-stone-400 bg-slate-900"
