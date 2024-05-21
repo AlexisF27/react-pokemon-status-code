@@ -1,5 +1,6 @@
 import './App.css'
 
+import { Box } from '@mui/material';
 import LinkCode from './components/linkCode/LinkCode'
 import NavBar from './components/navBar/NavBar'
 import SearchBar from './components/searchBar/SearchBar'
@@ -11,10 +12,13 @@ function App() {
 
   return (
     <ThemeProvider theme={fondTheme} >
-      <NavBar />
+        <NavBar />
+        <Box className="absolute top-0 end-0">
+          <SearchBar />
+        </Box>
+
       <Title />
-      <LinkCode/>
-      <SearchBar />
+      <LinkCode />
     </ThemeProvider>
   )
 }

@@ -1,12 +1,10 @@
-import { Box, Button, TextField } from '@mui/material';
-
-import SearchIcon from '@mui/icons-material/Search';
+import { Box, TextField } from '@mui/material';
 
 const SearchBar = () => {
   return (
     <Box className="flex flex-col">
 
-      <Box className="flex justify-center items-center grow-0 pt-10">
+      <Box className="flex justify-center items-center pt-10">
         <TextField
           InputProps={{
             readOnly: false,
@@ -15,15 +13,6 @@ const SearchBar = () => {
           defaultValue="https://http.dog/[code].jpg"
           type='search'
         />
-        <Box className="pl-4">
-          <Button
-            className='m-10 border-x'
-            variant="contained"
-          >
-            <SearchIcon />
-            Search Code
-          </Button>
-        </Box>
 
       </Box>
     </Box>

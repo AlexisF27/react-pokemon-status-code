@@ -32,7 +32,7 @@ function LinkCode() {
             className="text-white mb-4"
             ref={textRef}
           >
-            https://http.dog/[code].jpg
+            https://http.pokemon/[code].jpg
 
           </Typography>
           <IconButton onClick={handleCopyClick} >
