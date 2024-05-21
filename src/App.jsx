@@ -13,8 +13,8 @@ function App() {
     <ThemeProvider theme={fondTheme} >
       <NavBar />
       <Title />
-      <SearchBar />
       <LinkCode/>
+      <SearchBar />
     </ThemeProvider>
   )
 }
