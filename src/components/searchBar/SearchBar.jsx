@@ -12,9 +12,8 @@ const SearchBar = () => {
           placeholder="Search"
           type='search'
         />  
-
+        
         <SearchIcon/>
-
       </Box>
     </Box>
   );
