@@ -23,20 +23,28 @@ Ensure you have the following installed:
 |--------------|---|
 | Material UI  | X |
 | Vite         | X |
+| Tailwind     | X |
 | eslint       | X |
 | Prettier     |   |
 
- > [!IMPORTANT]  
-> If needed, installed manually with the following commands
 
 ```shell
 $ npm install @mui/material @emotion/react @emotion/styled
 ```
 
+## Dependencies
 
--Resources
-
--Pokemon Logo
-
-![logo-pokeball-coloring-page](https://github.com/AlexisF27/react-pokemon-status-code/assets/31175897/3d907c95-f92f-4b30-aee5-fa89be818cdf)
-
+- **@emotion/react**: ^11.11.4
+  - Emotion library for writing CSS styles with JavaScript.
+- **@emotion/styled**: ^11.11.0
+  - Styled components using Emotion.
+- **@fontsource/roboto**: ^5.0.12
+  - Self-hosted open-source fonts for Google Fonts.
+- **@mui/icons-material**: ^5.15.14
+  - Material UI Icons.
+- **@mui/material**: ^5.15.14
+  - Material UI core components.
+- **react**: ^18.2.0
+  - React library for building user interfaces.
+- **react-dom**: ^18.2.0
+  - React DOM for rendering React components.
