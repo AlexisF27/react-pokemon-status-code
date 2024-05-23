@@ -5,7 +5,6 @@ import PokemonStatusCodeCard from "../pokemonStatusCodeCard/PokemonStatusCodeCar
 import statusCodes from '../../assets/data/status_code_pokemon.json';
 
 function NotePad() {
-  // eslint-disable-next-line no-unused-vars
   const [pokemonStatusCodeCard, setPokemonStatusCodeCard] = useState([]);
 
   useEffect(() => {
@@ -17,7 +16,7 @@ function NotePad() {
       <Box className="flex justify-center items-center" >
         <Grid container spacing={2}>
           {pokemonStatusCodeCard.map((statusCodeCard) => ((
-            <PokemonStatusCodeCard key={statusCodeCard} />
+            <PokemonStatusCodeCard key={statusCodeCard.status_code_id} statusCodeCard={statusCodeCard}/>
           )))}
         </Grid>
 
