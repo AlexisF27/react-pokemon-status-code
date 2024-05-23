@@ -1,0 +1,254 @@
+[
+  {
+    "status_code_id": 100,
+    "title": "Continue"
+  },
+  {
+    "status_code_id": 101,
+    "title": "Switching Protocols"
+  },
+  {
+    "status_code_id": 102,
+    "title": "Processing"
+  },
+  {
+    "status_code_id": 103,
+    "title": "Early Hints"
+  },
+  {
+    "status_code_id": 200,
+    "title": "OK"
+  },
+  {
+    "status_code_id": 201,
+    "title": "Created"
+  },
+  {
+    "status_code_id": 202,
+    "title": "Accepted"
+  },
+  {
+    "status_code_id": 203,
+    "title": "Non-Authoritative Information"
+  },
+  {
+    "status_code_id": 204,
+    "title": "No Content"
+  },
+  {
+    "status_code_id": 205,
+    "title": "Reset Content"
+  },
+  {
+    "status_code_id": 206,
+    "title": "Partial Content"
+  },
+  {
+    "status_code_id": 207,
+    "title": "Multi-Status"
+  },
+  {
+    "status_code_id": 208,
+    "title": "Already Reported"
+  },
+  {
+    "status_code_id": 226,
+    "title": "IM Used"
+  },
+  {
+    "status_code_id": 300,
+    "title": "Multiple Choices"
+  },
+  {
+    "status_code_id": 301,
+    "title": "Moved Permanently"
+  },
+  {
+    "status_code_id": 302,
+    "title": "Found"
+  },
+  {
+    "status_code_id": 303,
+    "title": "See Other"
+  },
+  {
+    "status_code_id": 304,
+    "title": "Not Modified"
+  },
+  {
+    "status_code_id": 305,
+    "title": "Use Proxy"
+  },
+  {
+    "status_code_id": 306,
+    "title": "(Unused)"
+  },
+  {
+    "status_code_id": 307,
+    "title": "Temporary Redirect"
+  },
+  {
+    "status_code_id": 308,
+    "title": "Permanent Redirect"
+  },
+  {
+    "status_code_id": 400,
+    "title": "Bad Request"
+  },
+  {
+    "status_code_id": 401,
+    "title": "Unauthorized"
+  },
+  {
+    "status_code_id": 402,
+    "title": "Payment Required"
+  },
+  {
+    "status_code_id": 403,
+    "title": "Forbidden"
+  },
+  {
+    "status_code_id": 404,
+    "title": "Not Found"
+  },
+  {
+    "status_code_id": 405,
+    "title": "Method Not Allowed"
+  },
+  {
+    "status_code_id": 406,
+    "title": "Not Acceptable"
+  },
+  {
+    "status_code_id": 407,
+    "title": "Proxy Authentication Required"
+  },
+  {
+    "status_code_id": 408,
+    "title": "Request Timeout"
+  },
+  {
+    "status_code_id": 409,
+    "title": "Conflict"
+  },
+  {
+    "status_code_id": 410,
+    "title": "Gone"
+  },
+  {
+    "status_code_id": 411,
+    "title": "Length Required"
+  },
+  {
+    "status_code_id": 412,
+    "title": "Precondition Failed"
+  },
+  {
+    "status_code_id": 413,
+    "title": "Payload Too Large"
+  },
+  {
+    "status_code_id": 414,
+    "title": "URI Too Long"
+  },
+  {
+    "status_code_id": 415,
+    "title": "Unsupported Media Type"
+  },
+  {
+    "status_code_id": 416,
+    "title": "Range Not Satisfiable"
+  },
+  {
+    "status_code_id": 417,
+    "title": "Expectation Failed"
+  },
+  {
+    "status_code_id": 418,
+    "title": "I'm a teapot"
+  },
+  {
+    "status_code_id": 421,
+    "title": "Misdirected Request"
+  },
+  {
+    "status_code_id": 422,
+    "title": "Unprocessable Entity"
+  },
+  {
+    "status_code_id": 423,
+    "title": "Locked"
+  },
+  {
+    "status_code_id": 424,
+    "title": "Failed Dependency"
+  },
+  {
+    "status_code_id": 425,
+    "title": "Too Early"
+  },
+  {
+    "status_code_id": 426,
+    "title": "Upgrade Required"
+  },
+  {
+    "status_code_id": 428,
+    "title": "Precondition Required"
+  },
+  {
+    "status_code_id": 429,
+    "title": "Too Many Requests"
+  },
+  {
+    "status_code_id": 431,
+    "title": "Request Header Fields Too Large"
+  },
+  {
+    "status_code_id": 451,
+    "title": "Unavailable For Legal Reasons"
+  },
+  {
+    "status_code_id": 500,
+    "title": "Internal Server Error"
+  },
+  {
+    "status_code_id": 501,
+    "title": "Not Implemented"
+  },
+  {
+    "status_code_id": 502,
+    "title": "Bad Gateway"
+  },
+  {
+    "status_code_id": 503,
+    "title": "Service Unavailable"
+  },
+  {
+    "status_code_id": 504,
+    "title": "Gateway Timeout"
+  },
+  {
+    "status_code_id": 505,
+    "title": "HTTP Version Not Supported"
+  },
+  {
+    "status_code_id": 506,
+    "title": "Variant Also Negotiates"
+  },
+  {
+    "status_code_id": 507,
+    "title": "Insufficient Storage"
+  },
+  {
+    "status_code_id": 508,
+    "title": "Loop Detected"
+  },
+  {
+    "status_code_id": 510,
+    "title": "Not Extended"
+  },
+  {
+    "status_code_id": 511,
+    "title": "Network Authentication Required"
+  }
+]
