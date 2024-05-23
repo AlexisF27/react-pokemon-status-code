@@ -1,16 +1,20 @@
-### Run this project
+# Status Code Pokemon
 
-- Clone this project
+This is a React project called "Status Code Pokemon". The project is set up with Vite for a fast development environment and includes Material-UI for UI components, Tailwind CSS for utility-first styling, and ESLint for linting.
 
-- Install some dependencies
-```shell
-$ npm install
-```
+## Project Setup
 
-- Then run:
-```shell
-$ npm run dev
-```
+### Prerequisites
+
+Ensure you have the following installed:
+- Node.js (version 14 or above)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AlexisF27/status-code-pokemon.git
 
 > [!IMPORTANT]  
 > Some third-party dependencies are installed
