@@ -5,10 +5,10 @@ import PropTypes from 'prop-types'
 function PokemonStatusCodeCard({ statusCodeCard }) {
   return (
     <>
-      <Grid key={statusCodeCard}>
-        <Card sx={{ maxWidth: 345, border: 2, margin: 2 }}>
+      <Grid className="pl-12" key={statusCodeCard}>
+        <Card className="m-2 border-black h-72 w-80">
           <CardActionArea>
-            <CardMedia className="h-72 w-80"
+            <CardMedia 
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -23,7 +23,7 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
 }
 
 PokemonStatusCodeCard.propTypes = {
-  statusCodeCard: PropTypes.object.isRequired,
+  statusCodeCard: PropTypes.object,
 
 }
 
