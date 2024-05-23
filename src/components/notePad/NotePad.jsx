@@ -2,14 +2,14 @@ import { Box, Container, Grid } from "@mui/material"
 import { useEffect, useState } from 'react';
 
 import PokemonStatusCodeCard from "../pokemonStatusCodeCard/PokemonStatusCodeCard"
+import statusCodes from '../../assets/data/status_code_pokemon.json';
 
 function NotePad() {
   // eslint-disable-next-line no-unused-vars
   const [pokemonStatusCodeCard, setPokemonStatusCodeCard] = useState([]);
 
   useEffect(() => {
-    // Initialize with 10 elements
-    setPokemonStatusCodeCard(new Array(10).fill(null));
+    setPokemonStatusCodeCard(statusCodes);
   }, []);
 
   return (
