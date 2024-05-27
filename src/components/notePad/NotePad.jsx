@@ -10,11 +10,18 @@ function NotePad({ inputSearch }) {
 
   useEffect(() => {
     if (inputSearch) {
-      const searchQuery = Number(inputSearch);
-      const filteredStatusCodes = statusCodes.filter(statusCodeCard =>
-        statusCodeCard.status_code_id === searchQuery
-      );
-      setPokemonStatusCodeCard(filteredStatusCodes);
+      if (!isNaN(inputSearch)) {
+        const searchQuery = Number(inputSearch);
+        const filteredStatusCodes = statusCodes.filter(statusCodeCard =>
+          statusCodeCard.status_code_id === searchQuery
+        );
+        setPokemonStatusCodeCard(filteredStatusCodes);
+      } else {
+        const filteredStatusCodes = statusCodes.filter(statusCodeCard =>
+          statusCodeCard.title.toLowerCase().includes(inputSearch.toLowerCase())
+        );
+        setPokemonStatusCodeCard(filteredStatusCodes);
+      }
     } else {
       setPokemonStatusCodeCard(statusCodes);
     }
