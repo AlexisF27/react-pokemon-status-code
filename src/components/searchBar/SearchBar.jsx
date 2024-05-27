@@ -9,12 +9,13 @@ const SearchBar = ({ handleSearch }) => {
   const [pokemonStatusCodeQuery, setPokemonStatusCodeQuery] = useState('');
   const handleInputChange = (event) => {
     setPokemonStatusCodeQuery(event.target.value);
+    handleSearch(event.target.value);
   };
 
-  const handleSearchQuery = () => {
-    handleSearch(pokemonStatusCodeQuery);
-    setPokemonStatusCodeQuery('');
-  };
+  // const handleSearchQuery = () => {
+  //   handleSearch(pokemonStatusCodeQuery);
+  //   setPokemonStatusCodeQuery('');
+  // };
   return (
     <Box className="flex flex-col">
 
@@ -26,7 +27,7 @@ const SearchBar = ({ handleSearch }) => {
           value={pokemonStatusCodeQuery}
           onChange={handleInputChange}
         />
-        <IconButton onClick={handleSearchQuery}>
+        <IconButton onClick={() => handleSearch(pokemonStatusCodeQuery)}>
           <SearchIcon />
         </IconButton>
       </Box>
