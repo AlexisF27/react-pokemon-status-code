@@ -11,9 +11,9 @@ function NotePad({ inputSearch }) {
   useEffect(() => {
     if (inputSearch) {
       if (!isNaN(inputSearch)) {
-        const searchQuery = Number(inputSearch);
+        const searchQuery = inputSearch.toString();
         const filteredStatusCodes = statusCodes.filter(statusCodeCard =>
-          statusCodeCard.status_code_id === searchQuery
+          statusCodeCard.status_code_id.toString().startsWith(searchQuery)
         );
         setPokemonStatusCodeCard(filteredStatusCodes);
       } else {
