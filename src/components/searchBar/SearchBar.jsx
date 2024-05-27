@@ -1,6 +1,5 @@
 import { Box, Input } from '@mui/material';
 
-import IconButton from '@mui/material/IconButton';
 import PropTypes from 'prop-types';
 import SearchIcon from '@mui/icons-material/Search';
 import { useState } from 'react';
@@ -27,9 +26,7 @@ const SearchBar = ({ handleSearch }) => {
           value={pokemonStatusCodeQuery}
           onChange={handleInputChange}
         />
-        <IconButton onClick={() => handleSearch(pokemonStatusCodeQuery)}>
           <SearchIcon />
-        </IconButton>
       </Box>
     </Box>
   );
