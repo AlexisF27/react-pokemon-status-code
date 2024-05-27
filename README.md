@@ -6,6 +6,7 @@ This is a React project called "Status Code Pokemon". The project is set up with
 
 ### Prerequisites
 
+
 Ensure you have the following installed:
 - Node.js (version 14 or above)
 - npm or yarn
