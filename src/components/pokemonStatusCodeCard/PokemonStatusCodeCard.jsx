@@ -13,15 +13,15 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
   return (
     <>
       <Grid className="pl-12" key={statusCodeCard.status_code_id}>
-        <Card className="m-2 border-black h-72 w-80">
+        <Card className="m-2 border-black  w-80">
           <CardActionArea  onClick={handleCardClick}>
             <CardMedia 
-              className="h-56"
+              className="h-52"
               title={statusCodeCard.title}
               image={img}
             />
             <CardContent>
-              <Typography className="flex justify-center" gutterBottom variant="h5" component="div">
+              <Typography className="flex justify-center text-center" gutterBottom variant="h5" component="div">
               {statusCodeCard.status_code_id} - {statusCodeCard.title}
               </Typography>
             </CardContent>
