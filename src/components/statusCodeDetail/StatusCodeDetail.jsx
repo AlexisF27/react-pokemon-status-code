@@ -6,13 +6,17 @@ import StatusCodeDetailTypography from '../statusCodeDetailTypography/StatusCode
 function StatusCodeDetail() {
   const { statusCodeId } = useParams();
   const location = useLocation();
-  const { img } = location.state || {}
+  const { img, statusCodeTitle } = location.state || {};
+  console.log(statusCodeTitle);
+
   return (
     <>
-    <Box className="flex justify-center items-center">
-      <img src={img} alt="hpjaçs" />
-      <StatusCodeDetailTypography statusCodeId={statusCodeId}/>
-    </Box>
+      <Box className="flex justify-center items-center pt-16">
+        <img src={img} alt="hpjaçs" />
+        <Box className="pl-16">
+          <StatusCodeDetailTypography statusCodeId={statusCodeId} statusCodeTitle={statusCodeTitle} />
+        </Box>
+      </Box>
 
     </>
   )
