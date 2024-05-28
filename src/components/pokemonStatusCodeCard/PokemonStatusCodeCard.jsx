@@ -8,7 +8,9 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
   const navigate = useNavigate();
 
   const handleCardClick = () => {
-    navigate(`/${statusCodeCard.status_code_id}`);
+    navigate(`/${statusCodeCard.status_code_id}`,{
+      state: { img: img }
+    });
   };
   return (
     <>
