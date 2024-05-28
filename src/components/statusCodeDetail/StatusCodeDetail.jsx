@@ -1,17 +1,18 @@
-import {Card, CardMedia, Typography} from "@mui/material"
 import { useLocation, useParams } from 'react-router-dom';
+
+import { Box } from "@mui/material"
+import StatusCodeDetailTypography from '../statusCodeDetailTypography/StatusCodeDetailTypography';
 
 function StatusCodeDetail() {
   const { statusCodeId } = useParams();
   const location = useLocation();
   const { img } = location.state || {}
-  console.log(img)
   return (
     <>
-      <Typography>
-        The Status Code is {statusCodeId}
-      </Typography>
+    <Box className="flex justify-center items-center">
       <img src={img} alt="hpjaçs" />
+      <StatusCodeDetailTypography statusCodeId={statusCodeId}/>
+    </Box>
 
     </>
   )
