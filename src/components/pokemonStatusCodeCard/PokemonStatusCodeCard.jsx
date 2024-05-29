@@ -15,7 +15,7 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
       },
     });
   };
-  console.log(statusCodeCard.title);
+  console.log(statusCodeCard.img_status_code);
 
   return (
     <>
@@ -25,7 +25,7 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
             <CardMedia
               className="h-52"
               title={statusCodeCard.title}
-              image={img}
+              image={statusCodeCard.img_status_code}
             />
             <CardContent>
               <Typography className="flex justify-center text-center" gutterBottom variant="h5" component="div">
