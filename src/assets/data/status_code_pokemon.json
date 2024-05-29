@@ -1,7 +1,8 @@
 [
   {
     "status_code_id": 100,
-    "title": "Continue"
+    "title": "Continue",
+    "img_status_code": "../assets/data/status_code_pokemon/100.jpg"
   },
   {
     "status_code_id": 101,
