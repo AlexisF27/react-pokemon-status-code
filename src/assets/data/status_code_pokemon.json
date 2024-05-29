@@ -2,7 +2,8 @@
   {
     "status_code_id": 100,
     "title": "Continue",
-    "img_status_code": "/assets/img/100.png"
+    "img_status_code": "/assets/img/100.png",
+    "img": "/assets/img/100.png"
   },
   {
     "status_code_id": 101,

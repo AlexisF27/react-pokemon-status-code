@@ -23,9 +23,9 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
         <Card className="m-2 border-black  w-80">
           <CardActionArea onClick={handleCardClick}>
             <CardMedia
-              className="h-52"
+              className="h-64 mt-2 object-cover"
               title={statusCodeCard.title}
-              image={statusCodeCard.img_status_code}
+              image={statusCodeCard.img}
             />
             <CardContent>
               <Typography className="flex justify-center text-center" gutterBottom variant="h5" component="div">
