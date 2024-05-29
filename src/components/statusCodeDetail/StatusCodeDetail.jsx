@@ -13,7 +13,7 @@ function StatusCodeDetail() {
     <>
       <Box className="flex justify-center items-center pt-12">
         <img src={img}  />
-        <Box className="pl-16">
+        <Box className="pl-16 w-2/5">
           <StatusCodeDetailTypography statusCodeId={statusCodeId} statusCodeTitle={statusCodeTitle} />
         </Box>
       </Box>
