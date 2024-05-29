@@ -1,5 +1,5 @@
-import { Box, Typography } from "@mui/material"
-
+import { Box } from "@mui/material"
+import LinkCodeStatusCode from "../linkCodeStatusCode/LinkCodeStatusCode";
 import PropTypes from 'prop-types';
 
 function StatusCodeDetailTypography({ statusCodeId, statusCodeTitle }) {
@@ -10,23 +10,14 @@ function StatusCodeDetailTypography({ statusCodeId, statusCodeTitle }) {
         <Box className='text-9xl font-bold'>
           {statusCodeId}
         </Box>
-        <Box className='text-7xl '>
+        <Box className='text-5xl pb-4'>
           {statusCodeTitle}
         </Box>
-        <Box
-          className="flex justify-between items-center p-2 w-auto border-solid border-2 border-stone-400 bg-slate-900"
-        >
-          <Typography
-            className="text-white mb-4"
-            // ref={textRef}
-          >
-            https://http.pokemon/{statusCodeId}.jpg
-
-          </Typography>
-          {/* <IconButton onClick={handleCopyClick} >
-            <ContentCopyIcon className="text-white" />
-          </IconButton> */}
-        </Box>
+        
+        <LinkCodeStatusCode statusCodeId={statusCodeId} linkTo='the image:' />
+        <LinkCodeStatusCode statusCodeId={statusCodeId} extensionString= '.jpg' linkTo='this page:'  />
+        <LinkCodeStatusCode statusCodeId={statusCodeId} extensionString= '.json' linkTo='the Json Response:'  />
+ 
       </Box>
     </>
   )
