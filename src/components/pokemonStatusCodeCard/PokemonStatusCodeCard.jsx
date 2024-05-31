@@ -1,7 +1,6 @@
 import { Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material"
 
 import PropTypes from 'prop-types'
-import img from '../../assets/img/logo.jpg';
 import { useNavigate } from 'react-router-dom';
 
 function PokemonStatusCodeCard({ statusCodeCard }) {
@@ -10,7 +9,7 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
   const handleCardClick = () => {
     navigate(`/${statusCodeCard.status_code_id}`, {
       state: {
-        img: img,
+        img: statusCodeCard.img_status_code,
         statusCodeTitle: statusCodeCard.title
       },
     });
@@ -25,7 +24,7 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
             <CardMedia
               className="h-64 mt-2 object-cover"
               title={statusCodeCard.title}
-              image={statusCodeCard.img}
+              image={statusCodeCard.base_img}
             />
             <CardContent>
               <Typography className="flex justify-center text-center" gutterBottom variant="h5" component="div">
