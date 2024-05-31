@@ -1,6 +1,8 @@
+import { Box, Button, ButtonGroup } from "@mui/material"
 import { useLocation, useParams } from 'react-router-dom';
 
-import { Box } from "@mui/material"
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import StatusCodeDetailTypography from '../statusCodeDetailTypography/StatusCodeDetailTypography';
 
 function StatusCodeDetail() {
@@ -12,7 +14,19 @@ function StatusCodeDetail() {
   return (
     <>
       <Box className="flex justify-center items-center pt-12">
-        <img src={img}  />
+        <Box className="w-2/5 h-2/5">
+          <img src={img} alt="status code" />
+          <Box className="flex justify-center pt-2">
+            <ButtonGroup className="w-auto" variant="outlined" aria-label="Basic button group">
+              <Button>
+                <NavigateBeforeIcon/>
+              </Button>
+              <Button>
+                <NavigateNextIcon/>  
+              </Button>
+            </ButtonGroup>
+          </Box>
+        </Box>
         <Box className="pl-16 w-2/5">
           <StatusCodeDetailTypography statusCodeId={statusCodeId} statusCodeTitle={statusCodeTitle} />
         </Box>
