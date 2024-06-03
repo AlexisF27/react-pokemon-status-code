@@ -12,18 +12,18 @@ function NotePad({ inputSearch }) {
     if (inputSearch) {
       if (!isNaN(inputSearch)) {
         const searchQuery = inputSearch.toString();
-        const filteredStatusCodes = statusCodes.filter(statusCodeCard =>
+        const filteredStatusCodes = Object.values(statusCodes).filter(statusCodeCard =>
           statusCodeCard.status_code_id.toString().startsWith(searchQuery)
         );
         setPokemonStatusCodeCard(filteredStatusCodes);
       } else {
-        const filteredStatusCodes = statusCodes.filter(statusCodeCard =>
+        const filteredStatusCodes = Object.values(statusCodes).filter(statusCodeCard =>
           statusCodeCard.title.toLowerCase().includes(inputSearch.toLowerCase())
         );
         setPokemonStatusCodeCard(filteredStatusCodes);
       }
     } else {
-      setPokemonStatusCodeCard(statusCodes);
+      setPokemonStatusCodeCard(Object.values(statusCodes));
     }
   }, [inputSearch]);
 
