@@ -25,12 +25,12 @@ function StatusCodeDetail() {
     setStatusCodeIndex(index);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [statusCodeIndex]); 
-  
+  }, [statusCodeIndex]);
+
   const handleNextStatusCode = () => {
     if (statusCodeIndex < Object.values(statusCodes).length - 1) {
       const nextIndex = statusCodeIndex + 1;
-      const nextStatusCode =  Object.values(statusCodes)[nextIndex];
+      const nextStatusCode = Object.values(statusCodes)[nextIndex];
       setStatusCodeIndex(nextIndex);
       navigate(`/${nextStatusCode.status_code_id}`, {
         state: {
@@ -38,12 +38,12 @@ function StatusCodeDetail() {
           statusCodeTitle: nextStatusCode.title
         },
       });
-    } 
+    }
   };
   const handlePreviousStatusCode = () => {
     if (statusCodeIndex > 0) {
       const nextIndex = statusCodeIndex - 1;
-      const nextStatusCode =  Object.values(statusCodes)[nextIndex];
+      const nextStatusCode = Object.values(statusCodes)[nextIndex];
       setStatusCodeIndex(nextIndex);
       navigate(`/${nextStatusCode.status_code_id}`, {
         state: {
@@ -51,7 +51,7 @@ function StatusCodeDetail() {
           statusCodeTitle: nextStatusCode.title
         },
       });
-    } 
+    }
   };
 
 
@@ -61,7 +61,11 @@ function StatusCodeDetail() {
         <Box className="w-2/5 h-2/5">
           <img src={singularPokemonStatusDetail.img_status_code || img} alt="status code" />
           <Box className="flex justify-center pt-2">
-            <ButtonsAfterBeforeStatusCode handleNextStatusCode={handleNextStatusCode} handlePreviousStatusCode={handlePreviousStatusCode} />
+            <ButtonsAfterBeforeStatusCode
+              handleNextStatusCode={handleNextStatusCode}
+              handlePreviousStatusCode={handlePreviousStatusCode}
+              isFirst={statusCodeIndex === 0}
+              isLast={statusCodeIndex === Object.values(statusCodes).length - 1} />
           </Box>
         </Box>
         <Box className="pl-16 w-2/5">
