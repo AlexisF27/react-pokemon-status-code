@@ -2,12 +2,9 @@ import { Button, ButtonGroup } from "@mui/material"
 
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import PropTypes from 'prop-types'
 
-// import PropTypes from 'prop-types'
-
-function ButtonsAfterBeforeStatusCode(
-  // { currentId, onNavigate }
-) {
+function ButtonsAfterBeforeStatusCode( {handleNextStatusCode}) {
   return (
     <>
       <ButtonGroup className="w-auto" variant="outlined" >
@@ -29,7 +26,7 @@ function ButtonsAfterBeforeStatusCode(
           <NavigateBeforeIcon />
         </Button>
         <Button
-          // onClick={() => onNavigate(currentId + 1)} 
+          onClick={() => handleNextStatusCode()}
           className="w-72"
           sx={{
             color: 'gray', borderColor: 'gray',
@@ -51,8 +48,8 @@ function ButtonsAfterBeforeStatusCode(
 }
 
 ButtonsAfterBeforeStatusCode.propTypes = {
-  // currentId: PropTypes.number,
-  // onNavigate: PropTypes.func.isRequired,
+  handleNextStatusCode: PropTypes.func
+
 }
 
 
