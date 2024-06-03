@@ -40,6 +40,19 @@ function StatusCodeDetail() {
       });
     } 
   };
+  const handlePreviousStatusCode = () => {
+    if (statusCodeIndex > 0) {
+      const nextIndex = statusCodeIndex - 1;
+      const nextStatusCode =  Object.values(statusCodes)[nextIndex];
+      setStatusCodeIndex(nextIndex);
+      navigate(`/${nextStatusCode.status_code_id}`, {
+        state: {
+          img: nextStatusCode.img_status_code,
+          statusCodeTitle: nextStatusCode.title
+        },
+      });
+    } 
+  };
 
 
   return (
@@ -48,7 +61,7 @@ function StatusCodeDetail() {
         <Box className="w-2/5 h-2/5">
           <img src={singularPokemonStatusDetail.img_status_code || img} alt="status code" />
           <Box className="flex justify-center pt-2">
-            <ButtonsAfterBeforeStatusCode handleNextStatusCode={handleNextStatusCode} />
+            <ButtonsAfterBeforeStatusCode handleNextStatusCode={handleNextStatusCode} handlePreviousStatusCode={handlePreviousStatusCode} />
           </Box>
         </Box>
         <Box className="pl-16 w-2/5">
