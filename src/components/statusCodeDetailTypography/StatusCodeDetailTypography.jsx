@@ -29,7 +29,7 @@ function StatusCodeDetailTypography({ statusCodeId, statusCodeTitle }) {
 }
 
 StatusCodeDetailTypography.propTypes = {
-  statusCodeId: PropTypes.string.isRequired,
+  statusCodeId: PropTypes.string,
   statusCodeTitle: PropTypes.string,
 };
 
