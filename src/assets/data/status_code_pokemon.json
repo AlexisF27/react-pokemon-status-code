@@ -1,377 +1,377 @@
 {
-  "0": {
+  "100": {
     "status_code_id": 100,
     "title": "Continue",
     "img_status_code": "/assets/img/100.png",
     "base_img": "/assets/img/100m.png"
   },
-  "1": {
+  "101": {
     "status_code_id": 101,
     "title": "Switching Protocols",
     "img_status_code": "/assets/img/101.png",
     "base_img": "/assets/img/101m.png"
   },
-  "2": {
+  "102": {
     "status_code_id": 102,
     "title": "Processing",
     "img_status_code": "/assets/img/102.png",
     "base_img": "/assets/img/102m.png"
   },
-  "3": {
+  "103": {
     "status_code_id": 103,
     "title": "Early Hints",
     "img_status_code": "/assets/img/103.png",
     "base_img": "/assets/img/103m.png"
   },
-  "4": {
+  "200": {
     "status_code_id": 200,
     "title": "OK",
     "img_status_code": "/assets/img/200.png",
     "base_img": "/assets/img/200m.png"
   },
-  "5": {
+  "201": {
     "status_code_id": 201,
     "title": "Created",
     "img_status_code": "/assets/img/201.png",
     "base_img": "/assets/img/201m.png"
   },
-  "6": {
+  "202": {
     "status_code_id": 202,
     "title": "Accepted",
     "img_status_code": "/assets/img/202.png",
     "base_img": "/assets/img/202m.png"
   },
-  "7": {
+  "203": {
     "status_code_id": 203,
     "title": "Non-Authoritative Information",
     "img_status_code": "/assets/img/203.png",
     "base_img": "/assets/img/203m.png"
   },
-  "8": {
+  "204": {
     "status_code_id": 204,
     "title": "No Content",
     "img_status_code": "/assets/img/204.png",
     "base_img": "/assets/img/204m.png"
   },
-  "9": {
+  "205": {
     "status_code_id": 205,
     "title": "Reset Content",
     "img_status_code": "/assets/img/205.png",
     "base_img": "/assets/img/205m.png"
   },
-  "10": {
+  "206": {
     "status_code_id": 206,
     "title": "Partial Content",
     "img_status_code": "/assets/img/206.png",
     "base_img": "/assets/img/206m.png"
   },
-  "11": {
+  "207": {
     "status_code_id": 207,
     "title": "Multi-Status",
     "img_status_code": "/assets/img/207.png",
     "base_img": "/assets/img/207m.png"
   },
-  "12": {
+  "208": {
     "status_code_id": 208,
     "title": "Already Reported",
     "img_status_code": "/assets/img/208.png",
     "base_img": "/assets/img/208m.png"
   },
-  "13": {
+  "226": {
     "status_code_id": 226,
     "title": "IM Used",
     "img_status_code": "/assets/img/226.png",
     "base_img": "/assets/img/226m.png"
   },
-  "14": {
+  "300": {
     "status_code_id": 300,
     "title": "Multiple Choices",
     "img_status_code": "/assets/img/300.png",
     "base_img": "/assets/img/300m.png"
   },
-  "15": {
+  "301": {
     "status_code_id": 301,
     "title": "Moved Permanently",
     "img_status_code": "/assets/img/301.png",
     "base_img": "/assets/img/301m.png"
   },
-  "16": {
+  "302": {
     "status_code_id": 302,
     "title": "Found",
     "img_status_code": "/assets/img/302.png",
     "base_img": "/assets/img/302m.png"
   },
-  "17": {
+  "303": {
     "status_code_id": 303,
     "title": "See Other",
     "img_status_code": "/assets/img/303.png",
     "base_img": "/assets/img/303m.png"
   },
-  "18": {
+  "304": {
     "status_code_id": 304,
     "title": "Not Modified",
     "img_status_code": "/assets/img/304.png",
     "base_img": "/assets/img/304m.png"
   },
-  "19": {
+  "305": {
     "status_code_id": 305,
     "title": "Use Proxy",
     "img_status_code": "/assets/img/305.png",
     "base_img": "/assets/img/305m.png"
   },
-  "20": {
+  "306": {
     "status_code_id": 306,
     "title": "(Unused)",
     "img_status_code": "/assets/img/306.png",
     "base_img": "/assets/img/306m.png"
   },
-  "21": {
+  "307": {
     "status_code_id": 307,
     "title": "Temporary Redirect",
     "img_status_code": "/assets/img/307.png",
     "base_img": "/assets/img/307m.png"
   },
-  "22": {
+  "308": {
     "status_code_id": 308,
     "title": "Permanent Redirect",
     "img_status_code": "/assets/img/308.png",
     "base_img": "/assets/img/308m.png"
   },
-  "23": {
+  "400": {
     "status_code_id": 400,
     "title": "Bad Request",
     "img_status_code": "/assets/img/400.png",
     "base_img": "/assets/img/400m.png"
   },
-  "24": {
+  "401": {
     "status_code_id": 401,
     "title": "Unauthorized",
     "img_status_code": "/assets/img/401.png",
     "base_img": "/assets/img/401m.png"
   },
-  "25": {
+  "402": {
     "status_code_id": 402,
     "title": "Payment Required",
     "img_status_code": "/assets/img/402.png",
     "base_img": "/assets/img/402m.png"
   },
-  "26": {
+  "403": {
     "status_code_id": 403,
     "title": "Forbidden",
     "img_status_code": "/assets/img/403.png",
     "base_img": "/assets/img/403m.png"
   },
-  "27": {
+  "404": {
     "status_code_id": 404,
     "title": "Not Found",
     "img_status_code": "/assets/img/404.png",
     "base_img": "/assets/img/404m.png"
   },
-  "28": {
+  "405": {
     "status_code_id": 405,
     "title": "Method Not Allowed",
     "img_status_code": "/assets/img/405.png",
     "base_img": "/assets/img/405m.png"
   },
-  "29": {
+  "406": {
     "status_code_id": 406,
     "title": "Not Acceptable",
     "img_status_code": "/assets/img/406.png",
     "base_img": "/assets/img/406m.png"
   },
-  "30": {
+  "407": {
     "status_code_id": 407,
     "title": "Proxy Authentication Required",
     "img_status_code": "/assets/img/407.png",
     "base_img": "/assets/img/407m.png"
   },
-  "31": {
+  "408": {
     "status_code_id": 408,
     "title": "Request Timeout",
     "img_status_code": "/assets/img/408.png",
     "base_img": "/assets/img/408m.png"
   },
-  "32": {
+  "409": {
     "status_code_id": 409,
     "title": "Conflict",
     "img_status_code": "/assets/img/409.png",
     "base_img": "/assets/img/409m.png"
   },
-  "33": {
+  "410": {
     "status_code_id": 410,
     "title": "Gone",
     "img_status_code": "/assets/img/410.png",
     "base_img": "/assets/img/410m.png"
   },
-  "34": {
+  "411": {
     "status_code_id": 411,
     "title": "Length Required",
     "img_status_code": "/assets/img/411.png",
     "base_img": "/assets/img/411m.png"
   },
-  "35": {
+  "412": {
     "status_code_id": 412,
     "title": "Precondition Failed",
     "img_status_code": "/assets/img/412.png",
     "base_img": "/assets/img/412m.png"
   },
-  "36": {
+  "413": {
     "status_code_id": 413,
     "title": "Payload Too Large",
     "img_status_code": "/assets/img/413.png",
     "base_img": "/assets/img/413m.png"
   },
-  "37": {
+  "414": {
     "status_code_id": 414,
     "title": "URI Too Long",
     "img_status_code": "/assets/img/414.png",
     "base_img": "/assets/img/414m.png"
   },
-  "38": {
+  "415": {
     "status_code_id": 415,
     "title": "Unsupported Media Type",
     "img_status_code": "/assets/img/415.png",
     "base_img": "/assets/img/415m.png"
   },
-  "39": {
+  "416": {
     "status_code_id": 416,
     "title": "Range Not Satisfiable",
     "img_status_code": "/assets/img/416.png",
     "base_img": "/assets/img/416m.png"
   },
-  "40": {
+  "417": {
     "status_code_id": 417,
     "title": "Expectation Failed",
     "img_status_code": "/assets/img/417.png",
     "base_img": "/assets/img/417m.png"
   },
-  "41": {
+  "418": {
     "status_code_id": 418,
     "title": "I'm a teapot",
     "img_status_code": "/assets/img/418.png",
     "base_img": "/assets/img/418m.png"
   },
-  "42": {
+  "421": {
     "status_code_id": 421,
     "title": "Misdirected Request",
     "img_status_code": "/assets/img/421.png",
     "base_img": "/assets/img/421m.png"
   },
-  "43": {
+  "422": {
     "status_code_id": 422,
     "title": "Unprocessable Entity",
     "img_status_code": "/assets/img/422.png",
     "base_img": "/assets/img/422m.png"
   },
-  "44": {
+  "423": {
     "status_code_id": 423,
     "title": "Locked",
     "img_status_code": "/assets/img/423.png",
     "base_img": "/assets/img/423m.png"
   },
-  "45": {
+  "424": {
     "status_code_id": 424,
     "title": "Failed Dependency",
     "img_status_code": "/assets/img/424.png",
     "base_img": "/assets/img/424m.png"
   },
-  "46": {
+  "425": {
     "status_code_id": 425,
     "title": "Too Early",
     "img_status_code": "/assets/img/425.png",
     "base_img": "/assets/img/425m.png"
   },
-  "47": {
+  "426": {
     "status_code_id": 426,
     "title": "Upgrade Required",
     "img_status_code": "/assets/img/426.png",
     "base_img": "/assets/img/426m.png"
   },
-  "48": {
+  "428": {
     "status_code_id": 428,
     "title": "Precondition Required",
     "img_status_code": "/assets/img/428.png",
     "base_img": "/assets/img/428m.png"
   },
-  "49": {
+  "429": {
     "status_code_id": 429,
     "title": "Too Many Requests",
     "img_status_code": "/assets/img/429.png",
     "base_img": "/assets/img/429m.png"
   },
-  "50": {
+  "431": {
     "status_code_id": 431,
     "title": "Request Header Fields Too Large",
     "img_status_code": "/assets/img/431.png",
     "base_img": "/assets/img/431m.png"
   },
-  "51": {
+  "451": {
     "status_code_id": 451,
     "title": "Unavailable For Legal Reasons",
     "img_status_code": "/assets/img/451.png",
     "base_img": "/assets/img/451m.png"
   },
-  "52": {
+  "500": {
     "status_code_id": 500,
     "title": "Internal Server Error",
     "img_status_code": "/assets/img/500.png",
     "base_img": "/assets/img/500m.png"
   },
-  "53": {
+  "501": {
     "status_code_id": 501,
     "title": "Not Implemented",
     "img_status_code": "/assets/img/501.png",
     "base_img": "/assets/img/501m.png"
   },
-  "54": {
+  "502": {
     "status_code_id": 502,
     "title": "Bad Gateway",
     "img_status_code": "/assets/img/502.png",
     "base_img": "/assets/img/502m.png"
   },
-  "55": {
+  "503": {
     "status_code_id": 503,
     "title": "Service Unavailable",
     "img_status_code": "/assets/img/503.png",
     "base_img": "/assets/img/503m.png"
   },
-  "56": {
+  "504": {
     "status_code_id": 504,
     "title": "Gateway Timeout",
     "img_status_code": "/assets/img/504.png",
     "base_img": "/assets/img/504m.png"
   },
-  "57": {
+  "505": {
     "status_code_id": 505,
     "title": "HTTP Version Not Supported",
     "img_status_code": "/assets/img/505.png",
     "base_img": "/assets/img/505m.png"
   },
-  "58": {
+  "506": {
     "status_code_id": 506,
     "title": "Variant Also Negotiates",
     "img_status_code": "/assets/img/506.png",
     "base_img": "/assets/img/506m.png"
   },
-  "59": {
+  "507": {
     "status_code_id": 507,
     "title": "Insufficient Storage",
     "img_status_code": "/assets/img/507.png",
     "base_img": "/assets/img/507m.png"
   },
-  "60": {
+  "508": {
     "status_code_id": 508,
     "title": "Loop Detected",
     "img_status_code": "/assets/img/508.png",
     "base_img": "/assets/img/508m.png"
   },
-  "61": {
+  "510": {
     "status_code_id": 510,
     "title": "Not Extended",
     "img_status_code": "/assets/img/510.png",
     "base_img": "/assets/img/510m.png"
   },
-  "62": {
+  "511": {
     "status_code_id": 511,
     "title": "Network Authentication Required",
     "img_status_code": "/assets/img/511.png",
