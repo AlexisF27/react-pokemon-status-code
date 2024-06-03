@@ -14,7 +14,6 @@ function PokemonStatusCodeCard({ statusCodeCard }) {
       },
     });
   };
-  console.log(statusCodeCard.img_status_code);
 
   return (
     <>
