@@ -4,7 +4,6 @@ import LinkCodeStatusCode from "../linkCodeStatusCode/LinkCodeStatusCode";
 import PropTypes from 'prop-types';
 
 function StatusCodeDetailTypography({ statusCodeId, statusCodeTitle }) {
-  console.log(statusCodeTitle);
   return (
     <>
       <Box>
