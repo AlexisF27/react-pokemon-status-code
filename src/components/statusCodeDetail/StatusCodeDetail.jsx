@@ -3,11 +3,12 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 import { Box } from "@mui/material"
 import ButtonsAfterBeforeStatusCode from '../buttonsAfterBeforeStatusCode/ButtonsAfterBeforeStatusCode';
+import PropTypes from 'prop-types'
 import StatusCodeDetailTypography from '../statusCodeDetailTypography/StatusCodeDetailTypography';
 import statusCodes from '../../assets/data/status_code_pokemon.json';
 
-function StatusCodeDetail() {
-  const { statusCodeId } = useParams();
+function StatusCodeDetail({code404}) {
+  const { statusCodeId } = useParams() || code404;
   const location = useLocation();
   const navigate = useNavigate();
   const { img, statusCodeTitle } = location.state || {};
@@ -79,4 +80,9 @@ function StatusCodeDetail() {
     </>
   )
 }
+
+StatusCodeDetail.propTypes = {
+  code404: PropTypes.string,
+}
+
 export default StatusCodeDetail
