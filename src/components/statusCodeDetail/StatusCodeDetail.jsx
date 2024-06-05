@@ -1,28 +1,31 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
-import { Box } from "@mui/material"
+import { Box } from '@mui/material';
 import ButtonsAfterBeforeStatusCode from '../buttonsAfterBeforeStatusCode/ButtonsAfterBeforeStatusCode';
-// import PropTypes from 'prop-types'
 import StatusCodeDetailTypography from '../statusCodeDetailTypography/StatusCodeDetailTypography';
 import statusCodes from '../../assets/data/status_code_pokemon.json';
 
 function StatusCodeDetail() {
-  const { statusCodeId } =  useParams();
+  const { statusCodeId } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
   const { img, statusCodeTitle } = location.state || {};
-  const [singularPokemonStatusDetail, setSingularPokemonStatusDetail] = useState("");
+  const [singularPokemonStatusDetail, setSingularPokemonStatusDetail] = useState('');
   const [statusCodeIndex, setStatusCodeIndex] = useState(0);
 
   useEffect(() => {
-    const singularPokemonStatusDetail = Object.values(statusCodes).find(statusCode => statusCode.status_code_id === parseInt(statusCodeId));
+    const singularPokemonStatusDetail = Object.values(statusCodes).find(
+      (statusCode) => statusCode.status_code_id === parseInt(statusCodeId)
+    );
     setSingularPokemonStatusDetail(singularPokemonStatusDetail);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [statusCodeId]);
 
   useEffect(() => {
-    const index = Object.values(statusCodes).findIndex(statusCode => statusCode.status_code_id === parseInt(statusCodeId));
+    const index = Object.values(statusCodes).findIndex(
+      (statusCode) => statusCode.status_code_id === parseInt(statusCodeId)
+    );
     setStatusCodeIndex(index);
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -36,7 +39,7 @@ function StatusCodeDetail() {
       navigate(`/${nextStatusCode.status_code_id}`, {
         state: {
           img: nextStatusCode.img_status_code,
-          statusCodeTitle: nextStatusCode.title
+          statusCodeTitle: nextStatusCode.title,
         },
       });
     }
@@ -49,24 +52,27 @@ function StatusCodeDetail() {
       navigate(`/${nextStatusCode.status_code_id}`, {
         state: {
           img: nextStatusCode.img_status_code,
-          statusCodeTitle: nextStatusCode.title
+          statusCodeTitle: nextStatusCode.title,
         },
       });
     }
   };
 
-
   return (
     <>
       <Box className="flex justify-center items-center pt-12">
         <Box className="w-2/5 h-2/5">
-          <img src={singularPokemonStatusDetail.img_status_code || img} alt="status code" />
+          <img
+            src={singularPokemonStatusDetail.img_status_code || img}
+            alt="status code"
+          />
           <Box className="flex justify-center pt-2">
             <ButtonsAfterBeforeStatusCode
               handleNextStatusCode={handleNextStatusCode}
               handlePreviousStatusCode={handlePreviousStatusCode}
               isFirst={statusCodeIndex === 0}
-              isLast={statusCodeIndex === Object.values(statusCodes).length - 1} />
+              isLast={statusCodeIndex === Object.values(statusCodes).length - 1}
+            />
           </Box>
         </Box>
         <Box className="pl-16 w-2/5">
@@ -76,13 +82,8 @@ function StatusCodeDetail() {
           />
         </Box>
       </Box>
-
     </>
-  )
+  );
 }
 
-// StatusCodeDetail.propTypes = {
-//   code404: PropTypes.string,
-// }
-
-export default StatusCodeDetail
+export default StatusCodeDetail;
