@@ -20,9 +20,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home inputSearch={inputSearch} setInputSearch={setInputSearch} />} />
-          <Route path="/:statusCodeId" element={<StatusCodeDetail  />} />
-          <Route path="*" element={<StatusCodeDetail code404="404" />} />
-        
+          <Route path="/:statusCodeId" element={<StatusCodeDetail  />} />        
         </Routes>
       </Router>
     </ThemeProvider>
