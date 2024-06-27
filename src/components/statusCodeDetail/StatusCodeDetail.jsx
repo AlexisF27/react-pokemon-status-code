@@ -60,20 +60,20 @@ function StatusCodeDetail() {
 
   return (
     <>
-      <Box className="flex justify-center items-center pt-12">
+      <Box className="flex flex-col justify-center items-center pt-12">
         <Box className="w-2/5 h-2/5">
           <img
             src={singularPokemonStatusDetail.img_status_code || img}
             alt="status code"
           />
-          <Box className="flex justify-center pt-2">
-            <ButtonsAfterBeforeStatusCode
-              handleNextStatusCode={handleNextStatusCode}
-              handlePreviousStatusCode={handlePreviousStatusCode}
-              isFirst={statusCodeIndex === 0}
-              isLast={statusCodeIndex === Object.values(statusCodes).length - 1}
-            />
-          </Box>
+        </Box>
+        <Box className="flex justify-center pt-2">
+          <ButtonsAfterBeforeStatusCode
+            handleNextStatusCode={handleNextStatusCode}
+            handlePreviousStatusCode={handlePreviousStatusCode}
+            isFirst={statusCodeIndex === 0}
+            isLast={statusCodeIndex === Object.values(statusCodes).length - 1}
+          />
         </Box>
         <Box className="pl-16 w-2/5">
           <StatusCodeDetailTypography
