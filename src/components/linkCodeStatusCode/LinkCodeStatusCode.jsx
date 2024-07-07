@@ -39,16 +39,18 @@ function LinkCodeStatusCode({ statusCodeId, extensionString, linkTo }) {
       <Box className="pt-8">
         <Typography>Link to {linkTo}</Typography>
 
-        <Box className="flex mt-2 p-8 w-[50rem] border-solid border-2 border-stone-400 bg-slate-900">
+        <Box className="flex mt-2 p-8 w-[70rem] border-solid border-2 border-stone-400 bg-slate-900">
           <Typography
             className="text-white break-words w-full"
             ref={textRef}>
             https://http.pokemon/{statusCodeId}
             {extensionString}
-            ijafeiojfoijeoisjfowijfoiejoifjfwekjfiopejkfoiejsfoijseoifjesoifjesoivwevewfiewjfoijwefoiwejfioewjfiowjfioewjfiowjefiojweifj
+            ijafeiojfoijeoisjfowijfoiejoifjfwekjfiopejkfoiejsfoijseoifjesoifjesoivwevewfiewjfoijwefoiwejfiosfsdfewfewfewfewfewewjfiowjfioewjfiowjefiojweifj
           </Typography>
-          <IconButton onClick={handleCopyClick}>
-            <ContentCopyIcon className="text-white" />
+          <IconButton
+            onClick={handleCopyClick}
+            className="m-2">
+            <ContentCopyIcon className="text-white mr-16" />
           </IconButton>
         </Box>
       </Box>
