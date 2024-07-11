@@ -1,12 +1,6 @@
 import './App.css';
 
-import {
-  Navigate,
-  Route,
-  BrowserRouter as Router,
-  Routes,
-  useParams,
-} from 'react-router-dom';
+import { Navigate, Route, BrowserRouter as Router, Routes, useParams } from 'react-router-dom';
 import { useMemo, useState } from 'react';
 
 import Home from './components/home/Home';
@@ -21,8 +15,7 @@ function App() {
   const [inputSearch, setInputSearch] = useState('');
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const validStatusCodes = useMemo(
-    () =>
-      Object.values(statusCodes).map((statusCode) => statusCode.status_code_id),
+    () => Object.values(statusCodes).map((statusCode) => statusCode.status_code_id),
     [statusCodes]
   );
 
@@ -33,22 +26,28 @@ function App() {
   return (
     <ThemeProvider theme={fondTheme}>
       <Router>
-        <NavBar />
+        <NavBar
+          inputSearch={inputSearch}
+          setInputSearch={setInputSearch}
+        />
         <Routes>
           <Route
             path="/"
-            element={
-              <Home inputSearch={inputSearch} setInputSearch={setInputSearch} />
-            }
+            element={<Home inputSearch={inputSearch} />}
           />
           <Route
             path="/:statusCodeId"
-            element={
-              <StatusCodeRouteGuard isValidStatusCode={isValidStatusCode} />
-            }
+            element={<StatusCodeRouteGuard isValidStatusCode={isValidStatusCode} />}
           />
-          <Route path="*" element={<Navigate to="/404" replace />} />{' '}
-          {/* Fallback route */}
+          <Route
+            path="*"
+            element={
+              <Navigate
+                to="/404"
+                replace
+              />
+            }
+          />{' '}
         </Routes>
       </Router>
     </ThemeProvider>
@@ -60,7 +59,10 @@ const StatusCodeRouteGuard = ({ isValidStatusCode }) => {
   return isValidStatusCode(statusCodeId) ? (
     <StatusCodeDetail />
   ) : (
-    <Navigate to="/404" replace /> // Redirect to 404 page if statusCodeId is invalid
+    <Navigate
+      to="/404"
+      replace
+    />
   );
 };
 

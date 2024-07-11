@@ -11,10 +11,6 @@ const SearchBar = ({ handleSearch }) => {
     handleSearch(event.target.value);
   };
 
-  // const handleSearchQuery = () => {
-  //   handleSearch(pokemonStatusCodeQuery);
-  //   setPokemonStatusCodeQuery('');
-  // };
   return (
     <Box className="flex flex-col">
       <Box className="flex justify-center items-center pt-10 pr-10">
