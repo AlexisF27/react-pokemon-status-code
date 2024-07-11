@@ -16,6 +16,7 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const validStatusCodes = useMemo(
     () => Object.values(statusCodes).map((statusCode) => statusCode.status_code_id),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [statusCodes]
   );
 
