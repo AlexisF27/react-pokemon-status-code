@@ -17,16 +17,15 @@ const SearchBar = ({ handleSearch }) => {
   // };
   return (
     <Box className="flex flex-col">
-
       <Box className="flex justify-center items-center pt-10 pr-10">
         <Input
           className="w-3/4 ml-2.5"
           placeholder="Search"
-          type='search'
+          type="search"
           value={pokemonStatusCodeQuery}
           onChange={handleInputChange}
         />
-          <SearchIcon />
+        <SearchIcon />
       </Box>
     </Box>
   );
