@@ -60,7 +60,7 @@ function StatusCodeDetail() {
 
   return (
     <>
-      <Box className="flex flex-col justify-center items-center pt-12">
+      <Box className="flex flex-col justify-center items-center pt-12 ">
         <Box className="w-2/5 h-2/5">
           <img
             src={singularPokemonStatusDetail.img_status_code || img}
